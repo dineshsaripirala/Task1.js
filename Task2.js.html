@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Practice - All Sections</title>
+</head>
+<body>
+    <h1>JavaScript Operators: Complete Practice Sheet</h1>
+    <p>Check the <strong>Browser Console (F12)</strong> to see the output for all sections.</p>
+
+    <script>
+
+        // SECTION 1: Basic Arithmetic 
+        console.log("--- SECTION 1 ---");
+        console.log("1. Add, Sub, Mul, Div (25 & 4):", 25+4, 25-4, 25*4, 25/4);
+        console.log("2. Remainder (100 % 30):", 100 % 30);
+        console.log("3. 7 to the power 2:", 7 ** 2);
+        console.log("4. 2 to the power 5:", 2 ** 5);
+        console.log("5. 50 / 5:", 50 / 5);
+        console.log("6. Remainder 45 / 6:", 45 % 6);
+        console.log("7. 0.5 * 8:", 0.5 * 8);
+        console.log("8. 75 - 200:", 75 - 200);
+        console.log("9. Add 10, 20, 30:", 10 + 20 + 30);
+        console.log("10. 9 % 2:", 9 % 2);
+
+        // Exercise 1
+        {
+        let a = 5;
+        console.log(a++);
+        console.log(a);
+        }
+
+      // Exercise 2
+      {
+      let a = 5;
+      console.log(++a);
+      console.log(a);
+      }
+
+     // Exercise 3
+     {let a = 10;
+     let b = a++;
+     console.log(a, b);
+     }
+
+    // Exercise 4
+    {
+    let a = 10;
+    let b = ++a;
+    console.log(a, b);
+    }
+
+   // Exercise 5
+   {
+   let a = 1;
+   let b = a++ + a++;
+   console.log(a, b);
+   }
+
+  // Exercise 6
+  {
+  let a = 1;
+  let b = ++a + ++a;
+  console.log(a, b);
+  }
+
+// Exercise 7
+{
+  let a = 3;
+  a = a++;
+  console.log(a);
+}
+
+// Exercise 8
+{
+  let a = 3;
+  a = ++a;
+  console.log(a);
+}
+
+// Exercise 9
+{
+ let x = 5;
+ let y = --x;
+ console.log(x, y);
+}
+
+// Exercise 10
+{
+ let x = 5;
+ let y = x--;
+ console.log(x, y);
+}
+
+// Exercise 11
+{
+let a = 2;
+let b = a++ + ++a + a++;
+console.log(a, b);
+}
+
+// Exercise 12
+{
+let a = 4;
+let b = --a + a-- + --a;
+console.log(a, b);
+}
+
+// Exercise 13
+{
+let a = 1;
+let b = ++a + a++ + ++a;
+console.log(a, b);
+}
+
+// Exercise 14
+{
+let a = 5;
+let b = a++ + a++ + a++;
+console.log(a, b);
+}
+ // Seection assignment operators
+
+// 1. Use += on 10 with 5
+{
+    let x = 10;
+    x += 5;
+    console.log(x); // Output: 15
+}
+
+// 2. Use -= on 20 with 8
+{
+    let x = 20;
+    x -= 8;
+    console.log(x); // Output: 12
+}
+
+// 3. Use *= on 7 with 3
+{
+    let x = 7;
+    x *= 3;
+    console.log(x); // Output: 21
+}
+
+// 4. Use /= on 40 with 5
+{
+    let x = 40;
+    x /= 5;
+    console.log(x); // Output: 8
+}
+
+// 5. Use %= on 25 with 4
+{
+    let x = 25;
+    x %= 4;
+    console.log(x); // Output: 1
+}
+
+// Exercise Block 6
+{
+    let a = 5;
+    a += 3;
+    a *= 2;
+    console.log(a);
+}
+
+// Exercise Block 7
+{
+    let a = 10;
+    a -= 2;
+    a /= 4;
+    console.log(a);
+}
+
+// Exercise Block 8
+{
+    let a = 8;
+    a %= 3;
+    console.log(a);
+}
+
+// Exercise Block 9
+{
+    let a = 6;
+    a += a;
+    console.log(a);
+}
+
+// Exercise Block 10
+{
+    let a = 2;
+    a *= a += 3;
+    console.log(a);
+}
+
+// SECTION 5 – Logical Operators (46–55)
+
+// 46. Logical AND (Both must be true)
+console.log("46:", true && false); 
+
+//47. Logical OR (At least one must be true)
+console.log("47:", true || false); 
+
+// 48. Logical OR (Both are false)
+console.log("48:", false || false); 
+
+// 49. Logical NOT (Inverts the value)
+console.log("49:", !true); 
+
+// 50. NOT with comparison
+console.log("50:", !(5 > 2)); 
+
+// 51. AND with two true comparisons
+console.log("51:", 5 > 3 && 10 > 5); 
+
+// 52. AND where one side is false
+console.log("52:", 5 > 3 && 10 < 5); 
+
+// 53. OR where both sides are false
+console.log("53:", 5 < 3 || 10 < 5); 
+
+// 54. OR where one side is true
+console.log("54:", 5 < 3 || 10 > 5);
+
+// 55. Complex expression (Parentheses first)
+console.log("55:", (5 > 2 && 3 > 1) || (10 < 2)); 
+// Step 1: (true && true) -> true
+// Step 2: true || false
+// Result: true
+
+
+//Section6-Ternary(56-60) 
+
+// 1. Age Check
+let age = 20;
+console.log(age >= 18 ? "Adult" : "Minor");
+
+// 2. Marks Check
+let marks = 45;
+console.log(marks >= 50 ? "Pass" : "Fail");
+
+// 3. Even or Odd
+let number = 7;
+console.log(number % 2 === 0 ? "Even" : "Odd");
+
+// 4. Nested ternary for grades
+// (Example logic: A if >= 90, B if >= 80, C if >= 70, otherwise F)
+let score = 85;
+let grade = score >= 90 ? "A" 
+          : score >= 80 ? "B" 
+          : score >= 70 ? "C" 
+          : "F";
+console.log(grade);
+
+// 5. Positive or Negative (including zero check)
+let num = -10;
+console.log(num > 0 ? "Positive" : num < 0 ? "Negative" : "Zero");
+
+//Section 7-String & Concatenation(61-65)
+
+// 1. Join "Hello" and "World"
+let greeting = "Hello" + "World";
+console.log(greeting); // Output: "HelloWorld"
+
+// 2. Print full name using +
+let firstName = "Dinesh";
+let lastName = "Karthik";
+console.log(firstName + " " + lastName); 
+
+// 3. Print full name using template string
+// Template strings use backticks (`) and ${} syntax
+console.log('${firstName} ${lastName}'); 
+
+// 4. "10" + 5
+// When a string is added to a number, JS converts the number to a string
+console.log("10" + 5); 
+
+// 5. 5 + "10"
+// The order doesn't matter; the result is still string concatenation
+console.log(5 + "10");
+
+
+//Section 8-Implicit Type Conversion(66-70)
+
+// 1. String + Number (Concatenation)
+console.log('Task 1 ("5" + 2):', "5" + 2); 
+
+// 2. String - Number (subtraction)
+console.log('Task 2 ("5" - 2):', "5" - 2); 
+
+// 3. String * Number (multiplication)
+console.log('Task 3 ("5" * 2):', "5" * 2); 
+
+// 4. Boolean + Number (true is treated as 1)
+console.log('Task 4 (true + 1):', true + 1); 
+
+// 5. Boolean + String (Concatenation)
+console.log('Task 5 (false + "1"):', false + "1");
+
+
+//SECTION 9: EXPLICIT CONVERSION(71-75)
+
+console.log("Number('123'):", Number("123"));      
+console.log("Number('abc'):", Number("abc"));      
+console.log("Number(true):", Number(true));        
+console.log("Boolean(''):", Boolean(""));          
+console.log("Boolean('hello'):", Boolean("hello")); 
+
+// FINAL RAPID FIRE ROUND
+
+// 1. == vs ===
+console.log("1. Difference between == and ===");
+console.log("   5 == '5' is:", 5 == '5');           
+console.log("   5 === '5' is:", 5 === '5');        
+
+// 2. a++ vs ++a
+let a = 5;
+console.log("2. a++ returns value THEN increments:", a++); 
+console.log("   ++a increments THEN returns value:", ++a); 
+
+// 3. Falsy Values
+console.log("3. The 6 Falsy values are: false, 0, '', null, undefined, and NaN");
+
+// 4. Why '5' - 2 works but '5' + 2 behaves differently
+console.log("4. '5' - 2 is:", "5" - 2, "(Math conversion)");
+console.log("   '5' + 2 is:", "5" + 2, "(String joining/Concatenation)");
+
+// 5. null == undefined
+console.log("5. null == undefined is:", null == undefined); 
+console.log("   (They are loosely equal because they both represent 'emptiness' in JS logic)");
+</script>
+</body>
+</html>
+
